@@ -1,7 +1,6 @@
 <ion-header>
   <ion-navbar >
-  	  
-  	  <button ion-button icon-only color="danger" class="boton">
+  	  <button ion-button icon-only color="white" class="boton" (click)="add()">
   	        <ion-icon name="add"></ion-icon>
             </button>
 
@@ -15,17 +14,30 @@
 
 <ion-content padding>
 
+    <ion-list>
 
-<ion-list>
-  <ion-item>
-    <ion-thumbnail item-start>
-      <img src="imgs/foto.jpg">
-    </ion-thumbnail>
-    <h2>My Neighbor Totoro</h2>
-    <p>Hayao Miyazaki • 1988</p>
-    <button ion-button clear item-end>View</button>
-  </ion-item>
-</ion-list>
+
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="img/thumbnail-totoro.png">
+          </ion-thumbnail>
+          <h2>Nombre</h2>
+          <p>Telefono</p>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img src="img/thumbnail-totoro.png">
+            </ion-thumbnail>
+            <h2>Nombre</h2>
+            <p>Telefono</p>
+            <button ion-button clear item-end>View</button>
+          </ion-item>
+
+
+
+      </ion-list>
 
 
 
