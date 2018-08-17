@@ -25,13 +25,13 @@ export class HomePage {
   telefono:"9611529996",
 
 },
-/*{
+{
   nombre:"juan",
   ApellidoP:"hernandez",
   ApellidoM:"gomez",
   direcion:"calle chiapas",
   telefono:"9611529996",
-}*/
+}
   ]; 
 
 

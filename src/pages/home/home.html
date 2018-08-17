@@ -17,48 +17,42 @@
 
 
 <ion-content padding>
-      <ion-list>
-      <ion-item-sliding>
-          <ion-item>
-            <ion-avatar item-start>
-              <img src="assets/img/venkman.jpg">
-            </ion-avatar>
-            <h2>Venkman</h2>
-            <p>Back off man, I'm a scientist.</p>
-          </ion-item>
-          <ion-item-options>
-            <button ion-button color="secondary" icon-start>
-              <ion-icon name="call"></ion-icon>
-              Call
-            </button>
-          </ion-item-options>
-        </ion-item-sliding>
-      </ion-list>
-      <ion-list>
-
-
-          <ion-item>
+    
   
+  <!--<ion-list>
+  <ion-item>
     <button ion-item *ngFor="let item of lista" >
-      
-       <ion-thumbnail item-start>
+        <ion-thumbnail item-start>
           <img src="img/thumbnail-totoro.png">
-              </ion-thumbnail>
-        <h2>{{item.nombre}} {{item.ApellidoP}} {{item.ApellidoM}} </h2>
-        <!--<p>{{item.direcion}}</p>-->
-        <h2>{{item.telefono}}</h2>
-        
+        </ion-thumbnail>
+      <h2>{{item.nombre}} {{item.ApellidoP}} {{item.ApellidoM}} </h2>
+      <p>{{item.direcion}}</p><h2>{{item.telefono}}</h2>
       <button ion-button  item-end>detalles</button>
       <button ion-button color="danger" item-end>
       <ion-icon name="trash" ></ion-icon>  Eliminar </button>
-         
     </button>
-  
   </ion-item>
+
+  </ion-list>-->
+    
   
-        
-  
-        </ion-list>
+  <ion-list>
+      <ion-item-sliding *ngFor="let item of lista">
+          <button ion-item>
+            <h2>{{item.nombre}} {{item.ApellidoP}} {{item.ApellidoM}}</h2>
+            <ion-avatar item-start>
+              <img src="assets/img/venkman.jpg">
+            </ion-avatar>
+            <h2>{{item.telefono}}</h2>
+          </button>
+          <ion-item-options side="right">
+            <button ion-button color="red" icon-start>
+              <ion-icon name="trash"></ion-icon>
+             </button> 
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    
     
 
       
