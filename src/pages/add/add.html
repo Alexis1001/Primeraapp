@@ -15,41 +15,47 @@
 
 <ion-content padding>
 
-
+<form>
 <ion-list>
   
     <ion-item>
         <ion-label floating><ion-icon name="contact"></ion-icon> Nombre</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" name="nombre"></ion-input>
       </ion-item>
 
       <ion-item>
           <ion-label floating><ion-icon name="contact"></ion-icon> Apellido Paterno</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" name="ApellidoP"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label floating><ion-icon name="contact"></ion-icon> Apellido Materno</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" name="ApellidoM"></ion-input>
           </ion-item>
 
       <ion-item>
        <!-- <ion-label stacked><ion-icon name="call"></ion-icon>  Telefono</ion-label>
           <ion-input type="tel"></ion-input>-->
           <ion-label floating><ion-icon name="contact"></ion-icon> Telefono</ion-label>
-          <ion-input type="tel"></ion-input>
+          <ion-input type="tel" name="telefono"></ion-input>
+
+          
 
           
       </ion-item>
+<ion-item>
 
+  <ion-label floating><ion-icon name="contact"></ion-icon> Direcion</ion-label>
+  <ion-input type="tel" name="direccion"></ion-input>
 
+</ion-item>
 
   
 </ion-list>
-<button ion-button class="BotonAgregar"><ion-icon ios="ios-person-add" md="md-person-add" class="icono">
+<button ion-button class="BotonAgregar" type="submit"><ion-icon ios="ios-person-add" md="md-person-add" class="icono">
 </ion-icon> Agregar</button>
  
-  
+</form>
   
  
 
