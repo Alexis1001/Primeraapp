@@ -21,8 +21,8 @@ export class HomePage {
   nombre:"alexis",
   ApellidoP:"perez",
   ApellidoM:"gomez",
-  direcion:"calle chiapas",
-  telefono:"9611529996",
+  direcion:"calle guerrero",
+  telefono:"96112345",
 
 },
 {
@@ -31,11 +31,31 @@ export class HomePage {
   ApellidoM:"gomez",
   direcion:"calle chiapas",
   telefono:"9611529996",
+},
+{  
+  nombre:"francisco",
+  ApellidoP:"jimenez",
+  ApellidoM:"jimenez",
+  direcion:"calle oaxaca",
+  telefono:"961489567",
+   },
+  
+  {
+    nombre:"jaime",
+    ApellidoP:"francisco",
+    ApellidoM:"de la cruz",
+    direcion:"calle sinaloa",
+    telefono:"961489961",
+},
+{
+  nombre:"ector",
+  ApellidoP:"herrera",
+  ApellidoM:"herrera",
+  direcion:"calle chanka",
+  telefono:"961489961",
 }
+
   ]; 
-
-
-
     constructor(public navCtrl: NavController) {
  
   }
@@ -44,6 +64,6 @@ export class HomePage {
     this.navCtrl.push(AddPage);
   }
 
-
+//
 }
  

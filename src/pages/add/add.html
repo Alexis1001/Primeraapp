@@ -20,41 +20,40 @@
   
     <ion-item>
         <ion-label floating><ion-icon name="contact"></ion-icon> Nombre</ion-label>
-        <ion-input type="text" name="nombre"></ion-input>
+        <ion-input type="text" name="nombre"  [(ngModel)]="nombre"></ion-input>
       </ion-item>
 
       <ion-item>
           <ion-label floating><ion-icon name="contact"></ion-icon> Apellido Paterno</ion-label>
-          <ion-input type="text" name="ApellidoP"></ion-input>
+          <ion-input type="text" name="ApellidoP"  [(ngModel)]="ApellidoP"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label floating><ion-icon name="contact"></ion-icon> Apellido Materno</ion-label>
-            <ion-input type="text" name="ApellidoM"></ion-input>
+            <ion-input type="text" name="ApellidoM"  [(ngModel)]="ApellidoM" ></ion-input>
           </ion-item>
 
       <ion-item>
        <!-- <ion-label stacked><ion-icon name="call"></ion-icon>  Telefono</ion-label>
           <ion-input type="tel"></ion-input>-->
-          <ion-label floating><ion-icon name="contact"></ion-icon> Telefono</ion-label>
-          <ion-input type="tel" name="telefono"></ion-input>
-
-          
-
-          
+          <ion-label floating><ion-icon name="call"></ion-icon> Telefono</ion-label>
+          <ion-input type="tel" name="telefono" [(ngModel)]="telefono"></ion-input>
       </ion-item>
 <ion-item>
 
   <ion-label floating><ion-icon name="contact"></ion-icon> Direcion</ion-label>
-  <ion-input type="tel" name="direccion"></ion-input>
+  <ion-input type="tel" name="direccion" [(ngModel)]="direccion"></ion-input>
 
 </ion-item>
 
   
 </ion-list>
-<button ion-button class="BotonAgregar" type="submit"><ion-icon ios="ios-person-add" md="md-person-add" class="icono">
+<button ion-button class="BotonAgregar" type="submit" (click)="Agregar()"><ion-icon ios="ios-person-add" md="md-person-add" class="icono">
 </ion-icon> Agregar</button>
  
+<button ion-button  (click)="Verdatos()">ver</button>
+
+
 </form>
   
  
